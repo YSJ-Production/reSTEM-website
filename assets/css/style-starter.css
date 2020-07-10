@@ -10491,7 +10491,7 @@ h4.sub-title {
   -ms-transition: 0.3s ease-in; }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/2.jpg) no-repeat;
+  background: url(../images/2.png) no-repeat;
   background-size: cover;
   min-height: 600px;
   position: relative;
@@ -10508,7 +10508,7 @@ h4.sub-title {
   background-size: cover; }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/4.jpg) no-repeat;
+  background: url(../images/4.png) no-repeat;
   background-size: cover; }
 
 .w3l-main-slider .banner-view:before {
