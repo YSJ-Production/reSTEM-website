@@ -4141,12 +4141,12 @@ fieldset:disabled a.btn {
   border-color: #000000; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #000f21;
+    background-color: #000000;
     border-color: #000914; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #000f21;
-    border-color: #000914;
+    background-color: #000000;
+    border-color: #000000;
     box-shadow: 0 0 0 0.2rem rgba(38, 66, 99, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
@@ -4155,8 +4155,8 @@ fieldset:disabled a.btn {
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #000914;
-    border-color: #000307; }
+    background-color: #000000;
+    border-color: #000000; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(38, 66, 99, 0.5); }
@@ -9552,7 +9552,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 :root {
   --theme-color: #000000;
-  --secondary-color: #000000;
+  --secondary-color: #ffffff;
   --opposite-color: #fdc800;
   --text-color: #000000;
   --title-color: #ff0000;
@@ -11126,7 +11126,7 @@ button.owl-next {
     padding: 40px 30px;
     transition: 0.3s ease-out;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #000000;
     box-shadow: 0 0 30px #cccccc73; }
   .w3l-feature-3 .grid-column {
     grid-template-columns: 1fr 1fr 1fr;
@@ -11881,7 +11881,7 @@ button.owl-next {
 .w3l-footer-29-main .footer-list-29 ul li a, .w3l-footer-29-main .footer-list-29 ul li p {
   font-weight: normal;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 15px;
   color: #fff; }
 
 .w3l-footer-29-main .footer-list-29 ul li a:hover {
@@ -12655,7 +12655,7 @@ button.owl-next {
 
 .w3l-about-breadcrum .breadcrum-bg {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url(../images/3.jpg);
+  background-image: linear-gradient(to right, black, red), url(../images/3.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed; }
@@ -12721,7 +12721,7 @@ button.owl-next {
 
 .w3l-service-breadcrum .breadcrum-bg {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url(../images/2.jpg);
+  background-image: linear-gradient(to left, black, #cc0000), url(../images/2.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed; }
