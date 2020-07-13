@@ -2766,7 +2766,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #212529;
+  background-color: #cc0000;
   border-radius: 0.2rem; }
   kbd kbd {
     padding: 0;
@@ -9551,11 +9551,11 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 :root {
-  --theme-color: #002147;
-  --secondary-color: #fdc800;
+  --theme-color: #000000;
+  --secondary-color: #000000;
   --opposite-color: #fdc800;
-  --text-color: #585858;
-  --title-color: #1A1D2D;
+  --text-color: #cc0000;
+  --title-color: #ff0000;
   --white-color: #ffffff;
   --light-bg-color: #f6f6f6; }
 
