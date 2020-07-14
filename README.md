@@ -1,1 +1,1 @@
-# reSTEM
+> Young Scientists Journal: reSTEM
