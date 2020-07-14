@@ -5453,11 +5453,8 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem; }
-  .navbar-toggler:hover, .navbar-toggler:focus {
-    text-decoration: none; }
 
 .navbar-toggler-icon {
   display: inline-block;
@@ -5628,22 +5625,12 @@ input[type="button"].btn-block {
       color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand {
-  color: #fff; }
+  color: red; }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #fff; }
+    color: red}
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5); }
-  .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 0.75); }
-  .navbar-dark .navbar-nav .nav-link.disabled {
-    color: rgba(255, 255, 255, 0.25); }
-
-.navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .active > .nav-link,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #fff; }
 
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -9826,7 +9813,7 @@ h4.sub-title {
   content: '';
   width: 10px;
   height: 10px;
-  background: var(--white-color);
+
   border: 1px #d5d5d5ee solid;
   display: block;
   border-right: none;
@@ -9906,7 +9893,7 @@ h4.sub-title {
 
 .w3l-bootstrap-header .navbar-light .navbar-nav .nav-link:hover,
 .w3l-bootstrap-header .navbar-light .navbar-nav .nav-link:focus {
-  color: var(--secondary-color); }
+  color: black; }
 
 .w3l-bootstrap-header .navbar-light .navbar-nav .nav-link {
   color: var(--title-color);
