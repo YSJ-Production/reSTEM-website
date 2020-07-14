@@ -4744,7 +4744,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -11133,7 +11133,7 @@ button.owl-next {
     grid-gap: 20px; }
   .w3l-feature-3 .three-grids-columns h4 {
     font-size: 20px;
-    color: var(--title-color);
+    color: #ffffff;
     line-height: 30px;
     padding-top: 25px;
     font-weight: 600; }
@@ -11141,7 +11141,7 @@ button.owl-next {
     padding-top: 15px;
     font-size: 16px;
     line-height: 24px;
-    color: var(--text-color); }
+    color: #cc0000; }
   .w3l-feature-3 .three-grids-columns span.fa {
     font-size: 36px;
     color: var(--opposite-color); }
