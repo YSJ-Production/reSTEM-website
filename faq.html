@@ -16,9 +16,55 @@ Author URL: http://w3layouts.com
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
-  </head>
-  <body>
+	  
 
+	
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>  
+ 
 
 <!-- Top Menu 1 -->
 <section class="w3l-top-menu-1">
@@ -103,6 +149,7 @@ Author URL: http://w3layouts.com
     </div>
   </nav>
 </section>
+
 <section class="w3l-about-breadcrum">
   <div class="breadcrum-bg py-sm-5 py-4">
     <div class="container py-lg-3">
@@ -144,12 +191,13 @@ Author URL: http://w3layouts.com
                       <li><span class="fa fa-check"></span>Receive mentorship for research projects.</li>
                       <li><span class="fa fa-check"></span>Attend and present at conferences of the Young Scientists Journal.</li>
                     </ul>
-                    <p><b>How does a club benefit from membership of reSTEM and which ones are eligible?</b></p>
-                    <ul class="cont-4">
+                    <button class="accordion">How does a club benefit from membership of reSTEM and which ones are eligible?</button>
+                    <p class="panel">
+			<ul>			    
                       <li><span class="fa fa-check"></span>Access to unique activities (elaborated below) to promote STEM, especially research.</li>
                       <li><span class="fa fa-check"></span>Promotional material and other support to increase enrolment.</li>
                       <li><span class="fa fa-check"></span>For membership of the network, a club must be: STEM-oriented, authorized to operate by the institution and free and open for all students of the institution.</li>
-                    </ul>
+			</ul></p>
                     <p><b>How to join?</b></p>
                     <ul class="cont-4">
                       <li><span class="fa fa-check"></span>Sign up using the online form.</li>
