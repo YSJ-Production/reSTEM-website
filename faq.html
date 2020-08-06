@@ -16,9 +16,38 @@ Author URL: http://w3layouts.com
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
-  </head>
-  <body>
+	  
 
+	
+<style>
+.accordion {
+  background-color: #eee;
+  color: #cc0000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+ 
 
 <!-- Top Menu 1 -->
 <section class="w3l-top-menu-1">
@@ -103,6 +132,7 @@ Author URL: http://w3layouts.com
     </div>
   </nav>
 </section>
+
 <section class="w3l-about-breadcrum">
   <div class="breadcrum-bg py-sm-5 py-4">
     <div class="container py-lg-3">
@@ -118,60 +148,73 @@ Author URL: http://w3layouts.com
             <div class="cwp4-two row">
                
                 <div class="cwp4-text col-lg-6">
-                    <p><b>What is reSTEM?</b></p>
-                    <ul class="cont-4">
-                        <li><span class="fa fa-check"></span>Subsidiary of the prestigious Young Scientists Journal, reSTEM is a global network of research-oriented high school science clubs.</li>
-                        <li><span class="fa fa-check"></span>These hubs are provided with support for conducting activities like skill workshops, guidance seminars etc.</li>
-                        <li><span class="fa fa-check"></span>Hubs and Hub members compete with each other in various contests.</li>
-                        <li><span class="fa fa-check"></span>reSTEM Hubs form a global community of youth STEM research.</li>
-                    </ul>
-                    <p><b>What makes it unique?</b></p>
-                    <ul class="cont-4">
-                      <li><span class="fa fa-check"></span><b>Free</b> and <b>open</b> for schools across the world.</li>
-                      <li><span class="fa fa-check"></span>Focus on research.</li>
-                      <li><span class="fa fa-check"></span>Emphasis on practical application of knowledge and skill-building.</li>
-                      <li><span class="fa fa-check"></span>Comprehensive action and experience based learning framework.</li>
-                    </ul>
-                    <p><b>What is a reSTEM Hub?</b></p>
-                    <ul class="cont-4">
-                      <li><span class="fa fa-check"></span>A high school science club (or group of science clubs within a school) associated with YSJ reSTEM focusing on research-related activities.</li>
-                      <li><span class="fa fa-check"></span>May be either student-led or school-run.</li>
-                    </ul>
-                    <p><b>How do hub members benefit?</b></p>
-                    <ul class="cont-4">
-                      <li><span class="fa fa-check"></span>Learn skills and exposure for research and competing at science fairs.</li>
-                      <li><span class="fa fa-check"></span>Publish your research.</li>
-                      <li><span class="fa fa-check"></span>Receive mentorship for research projects.</li>
-                      <li><span class="fa fa-check"></span>Attend and present at conferences of the Young Scientists Journal.</li>
-                    </ul>
-                    <p><b>How does a club benefit from membership of reSTEM and which ones are eligible?</b></p>
-                    <ul class="cont-4">
-                      <li><span class="fa fa-check"></span>Access to unique activities (elaborated below) to promote STEM, especially research.</li>
-                      <li><span class="fa fa-check"></span>Promotional material and other support to increase enrolment.</li>
-                      <li><span class="fa fa-check"></span>For membership of the network, a club must be: STEM-oriented, authorized to operate by the institution and free and open for all students of the institution.</li>
-                    </ul>
-                    <p><b>How to join?</b></p>
-                    <ul class="cont-4">
-                      <li><span class="fa fa-check"></span>Sign up using the online form.</li>
-                      <li><span class="fa fa-check"></span>If approved, a link will be sent to register on a partner platform through which content will be provided for activities and workshops.</li>
-                      <li><span class="fa fa-check"></span>Register Hub members to give them access to quizzes and other content.</li>
-                    </ul>
-                    <p><b>When will activities be conducted?</b></p>
-                    <ul class="cont-4">
-                      <li><span class="fa fa-check"></span>Hub Activities can be conducted in weekly or biweekly sessions (total one hour a week) before, within or after school hours.</li>
-                      <li><span class="fa fa-check"></span>A <a href="calendar.html" target="_blank"><u>sample calendar</u></a> is available but Hubs can modify it according to requirements.</li>
-                      <li><span class="fa fa-check"></span>Content for workshops etc. is specially designed to be convenient for both in-person and virtual modes and are compatible with Zoom, Google Meet and other platforms.</li>
-                    </ul>
-                    <!--<ul>A global network of research-oriented high school science clubs (reSTEM Hubs)<br>
+                    <button class="accordion">What is reSTEM?</button>
+                    <div class="panel">
+                        <span class="fa fa-check"></span>An initiative of the prestigious Young Scientists Journal, reSTEM is a global network of research-oriented high school science clubs.<br>
+                        <span class="fa fa-check"></span>These hubs are provided with support for conducting activities like skill workshops, guidance seminars etc.<br>
+                        <span class="fa fa-check"></span>Hubs and Hub members compete with each other in various contests.<br>
+                        <span class="fa fa-check"></span>reSTEM Hubs form a global community of youth STEM research.<br>
+                    </div>
+                    <button class="accordion">What makes it unique?</button>
+                    <div class="panel">
+                      <span class="fa fa-check"></span><b>Free</b> and <b>open</b> for schools across the world.<br>
+                      <span class="fa fa-check"></span>Focus on research.<br>
+                      <span class="fa fa-check"></span>Emphasis on practical application of knowledge and skill-building.<br>
+                      <span class="fa fa-check"></span>Comprehensive action and experience based learning framework.<br>
+                    </div>
+                    <button class="accordion">What is a reSTEM Hub?</button>
+                    <div class="panel">
+                      <span class="fa fa-check"></span>A high school science club (or group of science clubs within a school) associated with YSJ reSTEM focusing on research-related activities.<br>
+                      <span class="fa fa-check"></span>May be either student-led or school-run.<br>
+                    </div>
+                    <button class="accordion">How do hub members benefit?</button>
+                    <div class="panel">
+                      <span class="fa fa-check"></span>Learn skills and exposure for research and competing at science fairs.<br>
+                      <span class="fa fa-check"></span>Publish your research.<br>
+                      <span class="fa fa-check"></span>Receive mentorship for research projects.<br>
+                      <span class="fa fa-check"></span>Attend and present at conferences of the Young Scientists Journal.<br>
+                    </div>
+</div>
+                <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+                    <button class="accordion">How does a club benefit from membership of reSTEM?</button>
+                    <div class="panel">
+						    
+                      <span class="fa fa-check"></span>Access to unique activities (elaborated below) to promote STEM, especially research.<br>
+                      <span class="fa fa-check"></span>Promotional material and other support to increase enrolment.<br>
+</div>
+                    <button class="accordion">Which clubs are eligible for membership of reSTEM?</button>
+                    <div class="panel">
+For membership of the network, a club must be:<br>
+<span class="fa fa-check"></span> STEM-oriented<br>
+<span class="fa fa-check"></span> Authorized to operate by the institution <br>
+<span class="fa fa-check"></span> Free and open for all students of the institution.<br>
+</div>
+			
+                    <button class="accordion">How to join?</button>
+                    <div class="panel">
+                      <span class="fa fa-check"></span>Sign up using the online form.<br>
+                      <span class="fa fa-check"></span>If approved, a link will be sent to register on the platform through which content will be provided for activities and workshops.<br>
+                      <span class="fa fa-check"></span>Register Hub members to give them access to quizzes and other content.<br>
+                    </div>
+                    <button class="accordion">When will activities be conducted?</button>
+                    <div class="panel">
+                      <span class="fa fa-check"></span>Hub Activities can be conducted in weekly or biweekly sessions (total one hour a week) before, within or after school hours.<br>
+                      <span class="fa fa-check"></span>A <a href="calendar.html" target="_blank"><u>sample calendar</u></a> is available but Hubs can modify it according to requirements.<br>
+                      <span class="fa fa-check"></span>Content for workshops etc. is specially designed to be convenient for both in-person and virtual modes and are compatible with Zoom, Google Meet and other platforms.<br>
+                    </div>
+</div>
+
+                    <!--A global network of research-oriented high school science clubs (reSTEM Hubs)<br>
 Associated with the Young Scientists Journal.<br>
 Hubs are provided with support for conducting activities like skill workshops, guidance seminars etc. <br>
 Hubs and Hub members compete with each other in various contests. <br>
 reSTEM Hubs form a global community of youth STEM research. <br>
                     -->
-                </div>
-                <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
-                    <img src="assets/images/g4.jpg" class="img-fluid" alt="" />
-                </div>
+                    
+
+
+
+                
             </div>
         </div>
     </div>
@@ -230,6 +273,23 @@ reSTEM Hubs form a global community of youth STEM research. <br>
   <button onclick="topFunction()" id="movetop" title="Go to top">
     <span class="fa fa-angle-up"></span>
   </button>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>  
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
